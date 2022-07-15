@@ -5,7 +5,7 @@ import React from 'react'
 const Footer: React.FC = () => {
   return (
     <footer>
-      Arthur Kim 2022
+      Артур Ким 2022
     </footer>
   );
 };
