@@ -1,50 +1,27 @@
-import { NavLink, Outlet } from 'react-router-dom';
-import Header from './Header'
-import Footer from './Footer'
+import React from 'react';
 
-import React from 'react'
+import Header from './Header';
+import LeftSideMenu from './LeftSideMenu';
+import Main from './Main';
 
-const Layout: React.FC = () => {
+import Box from '@mui/material/Box';
+
+interface Props {
+  /**
+   * Injected by the documentation to work in an iframe.
+   * You won't need it on your project.
+   */
+  //window?: () => Window;
+}
+
+function Layout(props: Props) {
   return (
-    <div>
-      <Header/>
-      <main>
-        <Outlet/>
-      </main>
-      <Footer/>
-    </div>
+    <Box sx={{ display: 'flex' }}>
+      <Header />
+      <LeftSideMenu />
+      <Main />
+    </Box>
   );
-};
+}
 
 export default Layout;
-
-
-//import CustomLink from './CustomLink';
-
-// const setActive = ({ isActive }) => (isActive ? 'active-link' : '');
-
-// function Layout() {
-//   return (
-//     <div className='body'>
-//       <header>
-//         <NavLink to='/' className={setActive}>
-//           Home
-//         </NavLink>
-//         <NavLink to='/posts' className={setActive}>
-//           Blog
-//         </NavLink>
-//         <NavLink to='/about' className={setActive}>
-//           About
-//         </NavLink>
-//         {/* Ниже пример использования CustomLink */}
-//         {/* <CustomLink to='/'>test</CustomLink> */}
-//       </header>
-//       <main>
-//         <Outlet />
-//       </main>
-//       <footer>2022</footer>
-//     </div>
-//   );
-// }
-
-// export default Layout;

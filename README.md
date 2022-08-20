@@ -3,12 +3,13 @@
 This project created for skill's demonstration and to help web developers in choosing a state manager in React. 
 
 ## Technologys
-React, TS, React-dom, MUI-React, MobX, Redux, Recoil
+React, TS, Sass, React-dom, MUI-React, MobX, Redux, Recoil
 
 ## How to use it
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 In the project directory, you can run:
 
+### `yarn install`
 ### `yarn start`
 
 Runs the app in the development mode.\

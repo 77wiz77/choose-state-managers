@@ -1,11 +1,9 @@
-import React from 'react'
+import React from 'react';
 
 const AboutPage: React.FC = () => {
-  return (
-    <div>
-      About
-    </div>
-  );
+  const info: string =
+    'Данный проект создан для помощи в выборе менеджеров управления состояниями';
+  return <div>{info}</div>;
 };
 
 export default AboutPage;

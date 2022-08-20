@@ -1,26 +1,43 @@
-import { NavLink, Outlet } from 'react-router-dom';
+import AppBar from '@mui/material/AppBar';
+import Toolbar from '@mui/material/Toolbar';
+import Typography from '@mui/material/Typography';
+import CssBaseline from '@mui/material/CssBaseline';
+import MenuIcon from '@mui/icons-material/Menu';
+import IconButton from '@mui/material/IconButton';
 
-import React from 'react'
-import styled from 'styled-components'
-const Nav = styled.div`
-  display: flex;
-  flex-flow: row nowrap;
-  padding-left: 20px;
-`;
+import { observer } from 'mobx-react-lite';
+import leftsidemenu from '../store/leftsidemenu';
 
-const Header: React.FC = () => {
+import React from 'react';
+
+const drawerWidth = 240;
+
+const Header: React.FC = observer(() => {
   return (
     <header>
-      <Nav>
-        <NavLink to='/'>Главная</NavLink>
-        <NavLink to='/about'>О проекте</NavLink>
-        <NavLink to='/redux'>Redux</NavLink>
-        <NavLink to='/mobx'>Mobx</NavLink>
-        <NavLink to='/recoil'>Recoil</NavLink>
-      </Nav>
-      
+      <CssBaseline />
+      <AppBar
+        position='fixed'
+        sx={{
+          width: { sm: `calc(100% - ${drawerWidth}px)` },
+          ml: { sm: `${drawerWidth}px` },
+        }}>
+        <Toolbar>
+          <IconButton
+            color='inherit'
+            aria-label='open drawer'
+            edge='start'
+            onClick={leftsidemenu.handleDrawerToggle}
+            sx={{ mr: 2, display: { sm: 'none' } }}>
+            <MenuIcon />
+          </IconButton>
+          <Typography variant='h6' noWrap component='div'>
+            Responsive drawer
+          </Typography>
+        </Toolbar>
+      </AppBar>
     </header>
   );
-};
+});
 
 export default Header;
