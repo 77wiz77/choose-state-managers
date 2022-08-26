@@ -38,6 +38,20 @@ export const SidebarData: SidebarItem[] = [
     title: 'Redux',
     path: '/redux',
     icon: <AiOutlineHistory />,
+    iconClosed: <AiFillCaretDown />,
+    iconOpened: <AiFillCaretUp />,
+    subnav: [
+      {
+        title: 'Description',
+        path: '/redux#description',
+        icon: <AiOutlineUser />,
+      },
+      {
+        title: 'Revenue',
+        path: '/overview/revenue',
+        icon: <AiOutlineMoneyCollect />,
+      },
+    ],
   },
   {
     title: 'MobX',

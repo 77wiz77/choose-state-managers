@@ -17,7 +17,11 @@ function App() {
         <Route path='/' element={<Layout />}>
           <Route index element={<HomePage />}></Route>
           <Route path='/about' element={<AboutPage />}></Route>
-          <Route path='/redux' element={<ReduxPage />}></Route>
+          <Route path='/redux' element={<ReduxPage />}>
+            <Route
+              path='/redux/redux#description'
+              element={<ReduxPage />}></Route>
+          </Route>
           <Route path='/mobx' element={<MobXPage />}></Route>
           <Route path='/recoil' element={<RecoilPage />}></Route>
           <Route path='*' element={<NoFoundPage />}></Route>

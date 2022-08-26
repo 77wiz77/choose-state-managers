@@ -1,7 +1,8 @@
 import React, { FC, useState } from 'react';
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { SidebarItem } from './SidebarItem';
+import { HashLink as Link } from 'react-router-hash-link';
 
 type SidebarLinkProps = {
   item: SidebarItem;
