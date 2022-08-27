@@ -29,7 +29,14 @@ function App() {
             <Route path='/mobx/mobx#description' element={<MobXPage />}></Route>
             <Route path='/mobx/mobx#mobxtest' element={<MobXPage />}></Route>
           </Route>
-          <Route path='/recoil' element={<RecoilPage />}></Route>
+          <Route path='/recoil' element={<RecoilPage />}>
+            <Route
+              path='/recoil/recoil#description'
+              element={<RecoilPage />}></Route>
+            <Route
+              path='/recoil/recoil#recoiltest'
+              element={<RecoilPage />}></Route>
+          </Route>
           <Route path='*' element={<NoFoundPage />}></Route>
         </Route>
       </Routes>
