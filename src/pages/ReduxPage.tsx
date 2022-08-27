@@ -1,4 +1,5 @@
 import React from 'react';
+import ReduxTest from '../components/ReduxTest/ReduxTest';
 
 const ReduxPage: React.FC = () => {
   const info: string =
@@ -25,6 +26,7 @@ const ReduxPage: React.FC = () => {
       </h2>
       {info}
       {test}
+      <ReduxTest />
     </div>
   );
 };

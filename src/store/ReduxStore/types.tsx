@@ -7,6 +7,7 @@ export interface BalanceState {
 export enum BalanceActionType {
   ADD = 'ADD',
   WITHDRAW = 'WITHDRAW',
+  CLEAR = 'CLEAR',
 }
 
 export interface AddAction extends Action {
@@ -19,4 +20,9 @@ export interface WithdrawAction extends Action {
   payload: number;
 }
 
-export type BalanceAction = AddAction | WithdrawAction;
+export interface ClearAction extends Action {
+  type: BalanceActionType.CLEAR;
+  payload: number;
+}
+
+export type BalanceAction = AddAction | WithdrawAction | ClearAction;

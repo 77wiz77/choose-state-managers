@@ -47,8 +47,8 @@ export const SidebarData: SidebarItem[] = [
         icon: <AiOutlineUser />,
       },
       {
-        title: 'Revenue',
-        path: '/overview/revenue',
+        title: 'Redux Test',
+        path: '/redux#reduxtest',
         icon: <AiOutlineMoneyCollect />,
       },
     ],

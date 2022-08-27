@@ -1,4 +1,9 @@
-import { BalanceActionType, AddAction, WithdrawAction } from './types';
+import {
+  BalanceActionType,
+  AddAction,
+  WithdrawAction,
+  ClearAction,
+} from './types';
 
 export const add = (amount: number): AddAction => ({
   type: BalanceActionType.ADD,
@@ -7,5 +12,10 @@ export const add = (amount: number): AddAction => ({
 
 export const withdraw = (amount: number): WithdrawAction => ({
   type: BalanceActionType.WITHDRAW,
+  payload: amount,
+});
+
+export const clear = (amount: number): ClearAction => ({
+  type: BalanceActionType.CLEAR,
   payload: amount,
 });

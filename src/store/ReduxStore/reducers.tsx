@@ -15,6 +15,9 @@ export const balanceReducer = (
     case BalanceActionType.WITHDRAW:
       return { ...state, balance: state.balance - action.payload };
 
+    case BalanceActionType.CLEAR:
+      return { ...state, balance: state.balance - action.payload };
+
     default:
       return state;
   }
