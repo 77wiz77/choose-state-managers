@@ -25,7 +25,10 @@ function App() {
               path='/redux/redux#reduxtest'
               element={<ReduxPage />}></Route>
           </Route>
-          <Route path='/mobx' element={<MobXPage />}></Route>
+          <Route path='/mobx' element={<MobXPage />}>
+            <Route path='/mobx/mobx#description' element={<MobXPage />}></Route>
+            <Route path='/mobx/mobx#mobxtest' element={<MobXPage />}></Route>
+          </Route>
           <Route path='/recoil' element={<RecoilPage />}></Route>
           <Route path='*' element={<NoFoundPage />}></Route>
         </Route>

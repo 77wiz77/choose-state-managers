@@ -1,7 +1,7 @@
+import { observer } from 'mobx-react-lite';
 import * as React from 'react';
-import { Dispatch } from 'redux';
-import { connect } from 'react-redux';
-import { add } from '../../store/ReduxStore/actions';
+import { BalanceState } from '../../store/MobXStore/BalanceState';
+
 import styled from 'styled-components';
 
 const Button = styled.button`
@@ -27,10 +27,10 @@ const ITERATION_COUNT = 1_000_000;
 let timerId: number | undefined;
 
 interface PerfTestProps {
-  add: (amount: number) => void;
+  balanceState: BalanceState;
 }
 
-const PerfTest: React.FC<PerfTestProps> = ({ add }) => {
+const PerfTest: React.FC<PerfTestProps> = observer(({ balanceState }) => {
   const [result, setResult] = React.useState<string>('-');
   const [isDisabled, setIsDisabled] = React.useState<boolean>(false);
 
@@ -40,7 +40,7 @@ const PerfTest: React.FC<PerfTestProps> = ({ add }) => {
 
     timerId = window.setInterval(() => {
       for (let i = 0; i <= ITERATION_COUNT; i++) {
-        add(100);
+        balanceState.add(100);
         i++;
       }
 
@@ -68,10 +68,6 @@ const PerfTest: React.FC<PerfTestProps> = ({ add }) => {
       <p>Result: {result}</p>
     </PerfTestCss>
   );
-};
-
-const mapDispatchToProps = (dispatch: Dispatch) => ({
-  add: (amount: number) => dispatch(add(amount)),
 });
 
-export default connect(null, mapDispatchToProps)(PerfTest);
+export default PerfTest;

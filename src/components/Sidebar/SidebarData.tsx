@@ -57,6 +57,20 @@ export const SidebarData: SidebarItem[] = [
     title: 'MobX',
     path: '/mobx',
     icon: <FaCog />,
+    iconClosed: <AiFillCaretDown />,
+    iconOpened: <AiFillCaretUp />,
+    subnav: [
+      {
+        title: 'Description',
+        path: '/mobx#description',
+        icon: <AiOutlineUser />,
+      },
+      {
+        title: 'MobX Test',
+        path: '/mobx#mobxtest',
+        icon: <AiOutlineMoneyCollect />,
+      },
+    ],
   },
   {
     title: 'Recoil',
