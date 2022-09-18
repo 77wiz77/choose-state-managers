@@ -1,5 +1,6 @@
 import React from 'react';
 import MobXTest from '../components/MobXTest/MobXTest';
+import MobXTable from '../components/MobXTest/MobXTable';
 
 const MobXPage: React.FC = () => {
   const info: string =
@@ -27,6 +28,7 @@ const MobXPage: React.FC = () => {
       {info}
       {test}
       <MobXTest />
+      <MobXTable />
     </div>
   );
 };

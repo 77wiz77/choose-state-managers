@@ -7,12 +7,12 @@ import styled from 'styled-components';
 const Button = styled.button`
   margin: 0.5em;
   padding: 0.5em;
-  background-color: lightsalmon;
+  background-color: #7bc2fd;
   border-radius: 0.25em;
   border: none;
   cursor: pointer;
   &:first-of-type {
-    background: palegreen;
+    background: #7bc2fd;
   }
 `;
 
@@ -23,7 +23,15 @@ const PerfTestCss = styled.div`
   justify-content: center;
 `;
 
-const ITERATION_COUNT = 1_000_000;
+const Input = styled.input`
+  border-radius: 0.25em;
+  height: 2em;
+  width: 6em;
+  margin-right: 0.5em;
+  text-align: right;
+`;
+
+//const ITERATION_COUNT = 1_000_000;
 let timerId: number | undefined;
 
 interface PerfTestProps {
@@ -34,19 +42,21 @@ const PerfTest: React.FC<PerfTestProps> = ({ add }) => {
   const [result, setResult] = React.useState<string>('-');
   const [isDisabled, setIsDisabled] = React.useState<boolean>(false);
 
+  const [count, setCount] = React.useState<number>(100_000);
+
   function runPerfTest() {
     setIsDisabled(true);
     const timeStart = performance.now();
 
     timerId = window.setInterval(() => {
-      for (let i = 0; i <= ITERATION_COUNT; i++) {
+      for (let i = 0; i <= count; i++) {
         add(100);
-        i++;
+        // i++;
       }
 
       window.clearInterval(timerId);
       const timeEnd = performance.now();
-      setResult(` ${Math.round(timeEnd - timeStart)} milliseconds`);
+      setResult(` ${Math.round(timeEnd - timeStart)} мс`);
       setIsDisabled(false);
     });
   }
@@ -55,17 +65,24 @@ const PerfTest: React.FC<PerfTestProps> = ({ add }) => {
     <PerfTestCss>
       <hr style={{ width: '100px' }} />
 
+      <p>Введите количество прогонов</p>
+      <Input
+        value={count}
+        type='number'
+        onChange={(event) => setCount(Number(event.target.value))}
+      />
+
       <Button disabled={isDisabled} onClick={runPerfTest}>
-        Run performance test
+        Запуск теста производительности
       </Button>
 
       <p>
-        Test case: <b>Add balance(+100$) {ITERATION_COUNT} times</b>
+        Тест: <b>Добавить к балансу(+100руб) {count} раз</b>
       </p>
 
       <br />
 
-      <p>Result: {result}</p>
+      <p>Результат: {result}</p>
     </PerfTestCss>
   );
 };

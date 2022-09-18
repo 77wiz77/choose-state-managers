@@ -76,5 +76,19 @@ export const SidebarData: SidebarItem[] = [
     title: 'Recoil',
     path: '/recoil',
     icon: <FaCog />,
+    iconClosed: <AiFillCaretDown />,
+    iconOpened: <AiFillCaretUp />,
+    subnav: [
+      {
+        title: 'Description',
+        path: '/recoil#description',
+        icon: <AiOutlineUser />,
+      },
+      {
+        title: 'Recoil Test',
+        path: '/recoil#recoiltest',
+        icon: <AiOutlineMoneyCollect />,
+      },
+    ],
   },
 ];

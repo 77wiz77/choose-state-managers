@@ -7,12 +7,12 @@ import styled from 'styled-components';
 const Button = styled.button`
   margin: 0.5em;
   padding: 0.5em;
-  background-color: lightsalmon;
+  background-color: #f16ab7;
   border-radius: 0.25em;
   border: none;
   cursor: pointer;
   &:first-of-type {
-    background: palegreen;
+    background: #7bc2fd;
   }
 `;
 
@@ -34,7 +34,7 @@ const Balance: React.FC<BalanceProps> = observer(({ balanceState }) => {
   return (
     <div>
       <h2 style={{ textAlign: 'center' }}>
-        Balance: {Math.round(balanceState.balance)} $
+        Баланс: {Math.round(balanceState.balance)} руб
       </h2>
 
       <Input
@@ -43,13 +43,13 @@ const Balance: React.FC<BalanceProps> = observer(({ balanceState }) => {
         onChange={(event) => setCurrentValue(Number(event.target.value))}
       />
 
-      <Button onClick={() => balanceState.add(currentValue)}>Add</Button>
+      <Button onClick={() => balanceState.add(currentValue)}>Добавить</Button>
 
       <Button onClick={() => balanceState.withdraw(currentValue)}>
-        Widthdraw
+        Убавить
       </Button>
 
-      <Button onClick={() => balanceState.clear()}>Clear</Button>
+      <Button onClick={() => balanceState.clear()}>Очистить</Button>
     </div>
   );
 });

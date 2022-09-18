@@ -9,12 +9,12 @@ import styled from 'styled-components';
 const Button = styled.button`
   margin: 0.5em;
   padding: 0.5em;
-  background-color: lightsalmon;
+  background-color: #f16ab7;
   border-radius: 0.25em;
   border: none;
   cursor: pointer;
   &:first-of-type {
-    background: palegreen;
+    background: #7bc2fd;
   }
 `;
 
@@ -38,7 +38,7 @@ const Balance = ({ add, withdraw, clear, balance }: BalanceProps) => {
 
   return (
     <div>
-      <h2 style={{ textAlign: 'center' }}>Balance: {Math.round(balance)} $</h2>
+      <h2 style={{ textAlign: 'center' }}>Баланс: {Math.round(balance)} руб</h2>
 
       <Input
         value={currentValue}
@@ -47,12 +47,12 @@ const Balance = ({ add, withdraw, clear, balance }: BalanceProps) => {
       />
 
       <Button id='add-balance' onClick={() => add(currentValue)}>
-        Add
+        Добавить
       </Button>
 
-      <Button onClick={() => withdraw(currentValue)}>Withdraw</Button>
+      <Button onClick={() => withdraw(currentValue)}>Убавить</Button>
 
-      <Button onClick={() => clear(balance)}>Clear</Button>
+      <Button onClick={() => clear(balance)}>Очистить</Button>
     </div>
   );
 };
