@@ -1,13 +1,9 @@
 import * as React from 'react';
 
-import { useRecoilState, useRecoilValue } from 'recoil';
+import { useRecoilState } from 'recoil';
 
 import BalanceState from '../../store/RecoilStore/atoms/BalanceState';
-import Result from '../../store/RecoilStore/atoms/Result';
-import Disabled from '../../store/RecoilStore/atoms/Disabled';
 import CountState from '../../store/RecoilStore/atoms/CountState';
-
-import Test from '../../store/RecoilStore/selectors/Test';
 
 import styled from 'styled-components';
 
@@ -49,15 +45,8 @@ const PerfTest: React.FC<PerfTestProps> = () => {
   const [isDisabled, setIsDisabled] = React.useState<boolean>(false);
 
   const [count, setCount] = useRecoilState(CountState);
-  //const [count, setCount] = React.useState<number>(100_000);
 
-  const [, setCurrentBalance] = useRecoilState(BalanceState);
-  // const [result] = useRecoilState(Result);
-  // const [isDisabled, setDisabled] = useRecoilState(Disabled);
-
-  let AddTest = useRecoilValue(Test);
-
-  console.log('AddTest: ' + AddTest);
+  let [balance, setBalance] = useRecoilState(BalanceState);
 
   function runPerfTest() {
     setIsDisabled(true);
@@ -65,8 +54,8 @@ const PerfTest: React.FC<PerfTestProps> = () => {
 
     timerId = window.setInterval(() => {
       for (let i = 0; i <= count; i++) {
-        setCurrentBalance(AddTest);
-        i++;
+        balance += 100;
+        setBalance(balance);
       }
       window.clearInterval(timerId);
       const timeEnd = performance.now();
@@ -74,14 +63,12 @@ const PerfTest: React.FC<PerfTestProps> = () => {
       setIsDisabled(false);
     });
   }
-  console.log('res:' + result);
 
   return (
     <PerfTestCss>
       <hr style={{ width: '100px' }} />
 
       <Button disabled={isDisabled} onClick={runPerfTest}>
-        {/* <Button onClick={() => setCurrentBalance(AddTest)}> */}
         Запуск теста производительности
       </Button>
 

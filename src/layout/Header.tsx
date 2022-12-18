@@ -32,7 +32,7 @@ const Header: React.FC = observer(() => {
             <MenuIcon />
           </IconButton>
           <Typography variant='h6' noWrap component='div'>
-            Responsive drawer
+            Redux vs MobX vs Recoil
           </Typography>
         </Toolbar>
       </AppBar>

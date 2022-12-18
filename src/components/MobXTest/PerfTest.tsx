@@ -50,7 +50,6 @@ const PerfTest: React.FC<PerfTestProps> = observer(({ balanceState }) => {
     timerId = window.setInterval(() => {
       for (let i = 0; i <= count; i++) {
         balanceState.add(100);
-        // i++;
       }
 
       window.clearInterval(timerId);

@@ -2,7 +2,7 @@ import { atom } from 'recoil';
 
 const Result = atom({
   key: 'Result',
-  default: '-',
+  default: 0,
 });
 
 export default Result;

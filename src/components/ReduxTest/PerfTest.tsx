@@ -51,7 +51,6 @@ const PerfTest: React.FC<PerfTestProps> = ({ add }) => {
     timerId = window.setInterval(() => {
       for (let i = 0; i <= count; i++) {
         add(100);
-        // i++;
       }
 
       window.clearInterval(timerId);
