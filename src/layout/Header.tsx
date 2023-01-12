@@ -31,7 +31,7 @@ const Header: React.FC = observer(() => {
             sx={{ mr: 2, display: { sm: 'none' } }}>
             <MenuIcon />
           </IconButton>
-          <Typography variant='h6' noWrap component='div'>
+          <Typography variant='h5' noWrap component='div'>
             Redux vs MobX vs Recoil
           </Typography>
         </Toolbar>

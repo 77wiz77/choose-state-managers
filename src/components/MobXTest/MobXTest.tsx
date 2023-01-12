@@ -1,11 +1,12 @@
 import React from 'react';
+import { BalanceState } from '../../store/MobXStore/BalanceState';
 
 import Balance from './Balance';
 import PerfTest from './PerfTest';
+import TableData from '../Table/TableData';
 
 import styled from 'styled-components';
-
-import { BalanceState } from '../../store/MobXStore/BalanceState';
+import { Typography } from '@mui/material';
 
 const Test = styled.div`
   display: flex;
@@ -19,11 +20,21 @@ const balanceState = new BalanceState();
 const MobXTest: React.FC = () => {
   return (
     <div>
-      <h1 id='reduxtest'>MobX Example</h1>
+      <Typography id='reduxtest' variant='h1'>
+        MobX Example
+      </Typography>
+      <Typography variant='body1'>
+        Здесь вы можете наглядно увидеть время многократного рендеринга
+        компонента, задав количество прогонов
+      </Typography>
       <Test>
         <Balance balanceState={balanceState} />
         <PerfTest balanceState={balanceState} />
       </Test>
+      <Typography variant='h1'>
+        Результаты замеров для Redux при 100 000 рендерингов
+      </Typography>
+      <TableData id={1} />
     </div>
   );
 };

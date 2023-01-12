@@ -1,4 +1,4 @@
-import React, { FC, useState } from 'react';
+import { FC, useState } from 'react';
 //import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { SidebarItem } from './SidebarItem';
@@ -20,7 +20,6 @@ const SidebarLink = styled(Link)`
 
   &:hover {
     background-color: #d9d9d9;
-    //border-left: 4px solid #6d44dc;
   }
 `;
 
@@ -51,7 +50,6 @@ const Submenu: FC<SidebarLinkProps> = ({ item }) => {
     <>
       <SidebarLink to={item.path} onClick={showSubnav}>
         <div>
-          {item.icon}
           <SidebarLabel>{item.title}</SidebarLabel>
         </div>
         <div>
@@ -62,7 +60,6 @@ const Submenu: FC<SidebarLinkProps> = ({ item }) => {
         item?.subnav?.map((subnavItem, index) => {
           return (
             <DropdownLink to={subnavItem.path} key={index}>
-              {subnavItem.icon}
               <SidebarLabel>{subnavItem.title}</SidebarLabel>
             </DropdownLink>
           );
