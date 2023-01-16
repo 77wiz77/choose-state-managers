@@ -21,7 +21,7 @@ const MobXTest: React.FC = () => {
   return (
     <div>
       <Typography id='reduxtest' variant='h1'>
-        MobX Example
+        Пример многократного рендеринга компонента с помощью MobX
       </Typography>
       <Typography variant='body1'>
         Здесь вы можете наглядно увидеть время многократного рендеринга

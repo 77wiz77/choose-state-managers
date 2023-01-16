@@ -20,7 +20,7 @@ const RecoilTest: React.FC = () => {
   return (
     <RecoilRoot>
       <Typography id='recoiltest' variant='h1'>
-        Recoil Example
+        Пример многократного рендеринга компонента с помощью Recoil
       </Typography>
       <Typography variant='body1'>
         Здесь вы можете наглядно увидеть время многократного рендеринга

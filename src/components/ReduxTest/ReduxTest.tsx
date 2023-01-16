@@ -20,7 +20,7 @@ const ReduxTest: React.FC = () => {
   return (
     <Provider store={store}>
       <Typography id='reduxtest' variant='h1'>
-        Redux Example
+        Пример многократного рендеринга компонента с помощью Redux
       </Typography>
       <Typography variant='body1'>
         Здесь вы можете наглядно увидеть время многократного рендеринга

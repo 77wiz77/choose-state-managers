@@ -7,8 +7,9 @@ const RecoilPage: React.FC = () => {
   const info: string = 'Recoil.';
   return (
     <div>
-      <Typography variant='h1'></Typography>
-      <h2 id='description'>Описание</h2>
+      <Typography variant='h1' id='description'>
+        О Recoil
+      </Typography>
       {info}
       <RecoilTest />
     </div>
