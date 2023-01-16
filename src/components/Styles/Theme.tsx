@@ -1,30 +1,32 @@
 import { createTheme, responsiveFontSizes } from '@mui/material/styles';
+//import { Fonts } from './Fonts/Fonts';
 
 let theme = createTheme({
   typography: {
     h1: {
-      fontSize: '24px',
-      marginTop: '1rem',
-      fontWeight: 'bold',
-      marginBottom: '2rem',
-    },
-    h2: {
-      fontSize: '22px',
-      marginTop: '1rem',
-      fontWeight: 'bold',
-      marginBottom: '2rem',
-    },
-    subtitle1: {
-      fontSize: '20px',
       marginTop: '10px',
       fontWeight: 'bold',
+      fontSize: '24px',
+    },
+    h2: {
+      marginTop: '10px',
+      fontWeight: 'bold',
+      fontSize: '24px',
+    },
+    h3: {
+      marginTop: '10px',
+      fontWeight: 'bold',
+      // fontSize: '24px',
+    },
+    h4: {
+      // fontSize: '24px',
+      marginBottom: '50px',
     },
     body1: {
-      fontSize: '18px',
-      marginBottom: '3rem',
+      fontSize: '24px',
     },
     body2: {
-      fontSize: '16px',
+      fontSize: '20px',
     },
   },
 });

@@ -39,6 +39,7 @@ const LeftSideMenu: React.FC = observer(() => {
             return <Sidebar item={item} key={index} />;
           })}
         </Drawer>
+        {/* Выше боковая панель для экранов смартфонов/планшетов  */}
         <Drawer
           variant='permanent'
           sx={{

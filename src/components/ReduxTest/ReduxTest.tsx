@@ -4,8 +4,10 @@ import { store } from '../../store/ReduxStore/store';
 
 import Balance from './Balance';
 import PerfTest from './PerfTest';
+import TableData from '../Table/TableData';
 
 import styled from 'styled-components';
+import { Typography } from '@mui/material';
 
 const Test = styled.div`
   display: flex;
@@ -17,9 +19,6 @@ const Test = styled.div`
 const ReduxTest: React.FC = () => {
   return (
     <Provider store={store}>
-<<<<<<< Updated upstream
-      <h1 id='reduxtest'>Redux Example</h1>
-=======
       <Typography id='reduxtest' variant='h1'>
         Пример многократного рендеринга компонента с помощью Redux
       </Typography>
@@ -27,11 +26,14 @@ const ReduxTest: React.FC = () => {
         Здесь вы можете наглядно увидеть время многократного рендеринга
         компонента, задав количество прогонов
       </Typography>
->>>>>>> Stashed changes
       <Test>
         <Balance />
         <PerfTest />
       </Test>
+      <Typography variant='h1'>
+        Результаты замеров для Redux при 100 000 рендерингов
+      </Typography>
+      <TableData id={0} />
     </Provider>
   );
 };
