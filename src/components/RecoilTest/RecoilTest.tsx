@@ -17,7 +17,17 @@ const Test = styled.div`
 const RecoilTest: React.FC = () => {
   return (
     <RecoilRoot>
+<<<<<<< Updated upstream
       <h1 id='recoiltest'>Recoil Example</h1>
+=======
+      <Typography id='recoiltest' variant='h1'>
+        Пример многократного рендеринга компонента с помощью Recoil
+      </Typography>
+      <Typography variant='body1'>
+        Здесь вы можете наглядно увидеть время многократного рендеринга
+        компонента, задав количество прогонов
+      </Typography>
+>>>>>>> Stashed changes
       <Test>
         <Balance />
         <PerfTest />

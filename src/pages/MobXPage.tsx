@@ -1,5 +1,6 @@
 import React from 'react';
 import MobXTest from '../components/MobXTest/MobXTest';
+<<<<<<< Updated upstream
 import MobXTable from '../components/MobXTest/MobXTable';
 
 const MobXPage: React.FC = () => {
@@ -25,8 +26,18 @@ const MobXPage: React.FC = () => {
       <h2 style={{ paddingTop: '80px' }} id='description'>
         Описание
       </h2>
+=======
+import { Typography } from '@mui/material';
+
+const MobXPage: React.FC = () => {
+  const info: string = '';
+  return (
+    <div>
+      <Typography variant='h1' id='description'>
+        О MobX
+      </Typography>
+>>>>>>> Stashed changes
       {info}
-      {test}
       <MobXTest />
       <MobXTable />
     </div>

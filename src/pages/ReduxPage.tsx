@@ -20,10 +20,16 @@ const ReduxPage: React.FC = () => {
     'Deserunt exercitation cupidatat reprehenderit aute irure. Sunt laborum reprehenderit cillum laborum fugiat mollit. Laboris nulla reprehenderit esse eiusmod nostrud velit labore. Nisi ipsum dolore eiusmod aliqua ea voluptate nisi proident consequat proident deserunt ea esse. In irure labore esse esse enim irure excepteur aute nulla quis. Ipsum proident do magna irure officia eu anim occaecat.';
   return (
     <div>
+<<<<<<< Updated upstream
       {test}
       <h2 style={{ paddingTop: '80px' }} id='description'>
         Описание
       </h2>
+=======
+      <Typography variant='h1' id='description'>
+        О Redux
+      </Typography>
+>>>>>>> Stashed changes
       {info}
       {test}
       <ReduxTest />
