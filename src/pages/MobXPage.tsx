@@ -1,6 +1,5 @@
 import React from 'react';
 import MobXTest from '../components/MobXTest/MobXTest';
-import MobXTable from '../components/MobXTest/MobXTable';
 import { Typography } from '@mui/material';
 
 const MobXPage: React.FC = () => {
