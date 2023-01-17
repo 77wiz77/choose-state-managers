@@ -4,9 +4,9 @@ let theme = createTheme({
   typography: {
     h1: {
       fontSize: '24px',
-      marginTop: '1rem',
+      paddingTop: '5rem',
+      marginBottom: '0.5rem',
       fontWeight: 'bold',
-      marginBottom: '2rem',
     },
     h2: {
       fontSize: '22px',
@@ -21,9 +21,10 @@ let theme = createTheme({
     },
     body1: {
       fontSize: '18px',
-      marginBottom: '3rem',
+      marginBottom: '1rem',
     },
     body2: {
+      textAlign: 'center',
       fontSize: '16px',
     },
   },

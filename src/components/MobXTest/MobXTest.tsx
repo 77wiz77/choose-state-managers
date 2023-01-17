@@ -31,8 +31,8 @@ const MobXTest: React.FC = () => {
         <Balance balanceState={balanceState} />
         <PerfTest balanceState={balanceState} />
       </Test>
-      <Typography variant='h1'>
-        Результаты замеров для Redux при 100 000 рендерингов
+      <Typography variant='subtitle1'>
+        Пример результатов замера для Redux при 100 000 рендерингов
       </Typography>
       <TableData id={1} />
     </div>

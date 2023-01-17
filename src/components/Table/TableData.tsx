@@ -51,7 +51,6 @@ interface TableID {
 
 const TableData: React.FC<TableID> = (idTable) => {
   const { id } = idTable;
-  console.log(id);
   return (
     <Box sx={{ overflow: 'auto' }}>
       <Box sx={{ width: '100%', display: 'table', tableLayout: 'fixed' }}>

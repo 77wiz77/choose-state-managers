@@ -30,8 +30,8 @@ const RecoilTest: React.FC = () => {
         <Balance />
         <PerfTest />
       </Test>
-      <Typography variant='h1'>
-        Результаты замеров для Redux при 100 000 рендерингов
+      <Typography variant='subtitle1'>
+        Пример результатов замера для Redux при 100 000 рендерингов
       </Typography>
       <TableData id={2} />
     </RecoilRoot>

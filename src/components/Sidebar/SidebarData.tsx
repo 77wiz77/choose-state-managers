@@ -17,12 +17,28 @@ export const SidebarData: SidebarItem[] = [
     iconOpened: <AiFillCaretUp />,
     subnav: [
       {
-        title: 'Description',
+        title: 'О Redux',
         path: '/redux#description',
       },
       {
-        title: 'Redux Test',
-        path: '/redux#reduxtest',
+        title: 'Документация',
+        path: '/redux#documentation',
+      },
+      {
+        title: 'Популярность',
+        path: '/redux#popularity',
+      },
+      {
+        title: 'Размер',
+        path: '/redux#size',
+      },
+      {
+        title: 'Масштабируемость',
+        path: '/redux#scalability',
+      },
+      {
+        title: 'Эксперимент',
+        path: '/redux#experiment',
       },
     ],
   },
@@ -33,12 +49,28 @@ export const SidebarData: SidebarItem[] = [
     iconOpened: <AiFillCaretUp />,
     subnav: [
       {
-        title: 'Description',
+        title: 'О MobX',
         path: '/mobx#description',
       },
       {
-        title: 'MobX Test',
-        path: '/mobx#mobxtest',
+        title: 'Документация',
+        path: '/mobx#documentation',
+      },
+      {
+        title: 'Популярность',
+        path: '/mobx#popularity',
+      },
+      {
+        title: 'Размер',
+        path: '/mobx#size',
+      },
+      {
+        title: 'Масштабируемость',
+        path: '/mobx#scalability',
+      },
+      {
+        title: 'Эксперимент',
+        path: '/mobx#experiment',
       },
     ],
   },
@@ -49,12 +81,28 @@ export const SidebarData: SidebarItem[] = [
     iconOpened: <AiFillCaretUp />,
     subnav: [
       {
-        title: 'Description',
+        title: 'О Recoil',
         path: '/recoil#description',
       },
       {
-        title: 'Recoil Test',
-        path: '/recoil#recoiltest',
+        title: 'Документация',
+        path: '/recoil#documentation',
+      },
+      {
+        title: 'Популярность',
+        path: '/recoil#popularity',
+      },
+      {
+        title: 'Размер',
+        path: '/recoil#size',
+      },
+      {
+        title: 'Масштабируемость',
+        path: '/recoil#scalability',
+      },
+      {
+        title: 'Эксперимент',
+        path: '/recoil#experiment',
       },
     ],
   },
