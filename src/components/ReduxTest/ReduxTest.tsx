@@ -19,9 +19,6 @@ const Test = styled.div`
 const ReduxTest: React.FC = () => {
   return (
     <Provider store={store}>
-      <Typography id='reduxtest' variant='h1'>
-        Пример многократного рендеринга компонента с помощью Redux
-      </Typography>
       <Typography variant='body1'>
         Здесь вы можете наглядно увидеть время многократного рендеринга
         компонента, задав количество прогонов
@@ -30,8 +27,8 @@ const ReduxTest: React.FC = () => {
         <Balance />
         <PerfTest />
       </Test>
-      <Typography variant='h1'>
-        Результаты замеров для Redux при 100 000 рендерингов
+      <Typography variant='subtitle1'>
+        Пример результатов замера для Redux при 100 000 рендерингов
       </Typography>
       <TableData id={0} />
     </Provider>

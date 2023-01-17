@@ -55,6 +55,7 @@ const LeftSideMenu: React.FC = observer(() => {
           {SidebarData.map((item, index) => {
             return <Sidebar item={item} key={index} />;
           })}
+          <Toolbar />
         </Drawer>
       </Box>
     </div>

@@ -1,5 +1,4 @@
 import { FC, useState } from 'react';
-//import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { SidebarItem } from './SidebarItem';
 import { HashLink as Link } from 'react-router-hash-link';
@@ -25,6 +24,7 @@ const SidebarLink = styled(Link)`
 
 const SidebarLabel = styled.span`
   margin-left: 1rem;
+  margin-right: 1rem;
 `;
 
 const DropdownLink = styled(Link)`
@@ -33,7 +33,7 @@ const DropdownLink = styled(Link)`
   align-items: center;
   height: 3.75rem;
   font-size: 1.125rem;
-  padding-left: 3rem;
+  padding-left: 2.5rem;
   text-decoration: none;
   color: black;
 
@@ -56,14 +56,16 @@ const Submenu: FC<SidebarLinkProps> = ({ item }) => {
           {item?.subnav && subnav ? item?.iconOpened : item?.iconClosed}
         </div>
       </SidebarLink>
-      {subnav &&
-        item?.subnav?.map((subnavItem, index) => {
-          return (
-            <DropdownLink to={subnavItem.path} key={index}>
-              <SidebarLabel>{subnavItem.title}</SidebarLabel>
-            </DropdownLink>
-          );
-        })}
+      <div>
+        {subnav &&
+          item?.subnav?.map((subnavItem, index) => {
+            return (
+              <DropdownLink to={subnavItem.path} key={index}>
+                <SidebarLabel>{subnavItem.title}</SidebarLabel>
+              </DropdownLink>
+            );
+          })}
+      </div>
     </>
   );
 };
