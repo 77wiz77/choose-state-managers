@@ -4,7 +4,7 @@ import { SidebarItem } from './SidebarItem';
 export const SidebarData: SidebarItem[] = [
   {
     title: 'Главная',
-    path: '/',
+    path: '/#home',
   },
   {
     title: 'О проекте',
@@ -12,97 +12,97 @@ export const SidebarData: SidebarItem[] = [
   },
   {
     title: 'Redux',
-    path: '/redux',
+    path: '/redux#redux',
     iconClosed: <AiFillCaretDown />,
     iconOpened: <AiFillCaretUp />,
     subnav: [
       {
         title: 'О Redux',
-        path: '/redux#description',
+        path: '/redux#redux-description',
       },
       {
         title: 'Документация',
-        path: '/redux#documentation',
+        path: '/redux#redux-documentation',
       },
       {
         title: 'Популярность',
-        path: '/redux#popularity',
+        path: '/redux#redux-popularity',
       },
       {
         title: 'Размер',
-        path: '/redux#size',
+        path: '/redux#redux-size',
       },
       {
         title: 'Масштабируемость',
-        path: '/redux#scalability',
+        path: '/redux#redux-scalability',
       },
       {
         title: 'Эксперимент',
-        path: '/redux#experiment',
+        path: '/redux#redux-experiment',
       },
     ],
   },
   {
     title: 'MobX',
-    path: '/mobx',
+    path: '/mobx#mobx',
     iconClosed: <AiFillCaretDown />,
     iconOpened: <AiFillCaretUp />,
     subnav: [
       {
         title: 'О MobX',
-        path: '/mobx#description',
+        path: '/mobx#mobx-description',
       },
       {
         title: 'Документация',
-        path: '/mobx#documentation',
+        path: '/mobx#mobx-documentation',
       },
       {
         title: 'Популярность',
-        path: '/mobx#popularity',
+        path: '/mobx#mobx-popularity',
       },
       {
         title: 'Размер',
-        path: '/mobx#size',
+        path: '/mobx#mobx-size',
       },
       {
         title: 'Масштабируемость',
-        path: '/mobx#scalability',
+        path: '/mobx#mobx-scalability',
       },
       {
         title: 'Эксперимент',
-        path: '/mobx#experiment',
+        path: '/mobx#mobx-experiment',
       },
     ],
   },
   {
     title: 'Recoil',
-    path: '/recoil',
+    path: '/recoil#recoil',
     iconClosed: <AiFillCaretDown />,
     iconOpened: <AiFillCaretUp />,
     subnav: [
       {
         title: 'О Recoil',
-        path: '/recoil#description',
+        path: '/recoil#recoil-description',
       },
       {
         title: 'Документация',
-        path: '/recoil#documentation',
+        path: '/recoil#recoil-documentation',
       },
       {
         title: 'Популярность',
-        path: '/recoil#popularity',
+        path: '/recoil#recoil-popularity',
       },
       {
         title: 'Размер',
-        path: '/recoil#size',
+        path: '/recoil#recoil-size',
       },
       {
         title: 'Масштабируемость',
-        path: '/recoil#scalability',
+        path: '/recoil#recoil-scalability',
       },
       {
         title: 'Эксперимент',
-        path: '/recoil#experiment',
+        path: '/recoil#recoil-experiment',
       },
     ],
   },

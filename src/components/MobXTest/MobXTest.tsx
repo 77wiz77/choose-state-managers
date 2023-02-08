@@ -20,10 +20,10 @@ const balanceState = new BalanceState();
 const MobXTest: React.FC = () => {
   return (
     <div>
-      <Typography id='reduxtest' variant='h1'>
+      <Typography id='mobxtest' variant='body1'>
         Пример многократного рендеринга компонента с помощью MobX
       </Typography>
-      <Typography variant='body1'>
+      <Typography variant='subtitle1'>
         Здесь вы можете наглядно увидеть время многократного рендеринга
         компонента, задав количество прогонов
       </Typography>

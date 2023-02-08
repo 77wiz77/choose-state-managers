@@ -1,7 +1,7 @@
 import React from 'react';
 
 const NoFoundPage: React.FC = () => {
-  return <div>Error404</div>;
+  return <div id='404'>Такой страницы нет</div>;
 };
 
 export default NoFoundPage;

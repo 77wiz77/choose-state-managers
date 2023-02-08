@@ -36,16 +36,13 @@ const Input = styled.input`
 
 let timerId: number | undefined;
 
-interface PerfTestProps {
-  //balanceState: number;
-}
-
-const PerfTest: React.FC<PerfTestProps> = () => {
+const PerfTest: React.FC = () => {
   const [result, setResult] = React.useState<string>('-');
   const [isDisabled, setIsDisabled] = React.useState<boolean>(false);
 
   const [count, setCount] = useRecoilState(CountState);
 
+  // eslint-disable-next-line prefer-const
   let [balance, setBalance] = useRecoilState(BalanceState);
 
   function runPerfTest() {
@@ -74,6 +71,7 @@ const PerfTest: React.FC<PerfTestProps> = () => {
 
       <p>Введите количество прогонов</p>
       <Input
+        data-testid='input-perf-test'
         value={count}
         type='number'
         onChange={(event) => setCount(Number(event.target.value))}
@@ -84,7 +82,7 @@ const PerfTest: React.FC<PerfTestProps> = () => {
 
       <br />
 
-      <p>Результат: {result}</p>
+      <p data-testid='result'>Результат: {result}</p>
     </PerfTestCss>
   );
 };

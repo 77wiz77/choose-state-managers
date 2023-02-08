@@ -1,6 +1,7 @@
 import React from 'react';
 import ReduxTest from '../components/ReduxTest/ReduxTest';
 import { Typography, Box, Link } from '@mui/material';
+import Graph from '../components/Graph/Graph';
 
 const ReduxPage: React.FC = () => {
   return (
@@ -8,14 +9,15 @@ const ReduxPage: React.FC = () => {
       sx={{
         display: 'flex',
         flexFlow: 'column nowrap',
-      }}>
+      }}
+      id='redux'>
       <Box
         sx={{
           display: 'flex',
           flexFlow: 'column nowrap',
           marginBottom: '3rem',
         }}
-        id='description'>
+        id='redux-description'>
         <Typography variant='h1'>О Redux</Typography>
         <Typography variant='body1'>
           Redux представляет собой старейшее решение от компании Facebook в
@@ -64,7 +66,7 @@ const ReduxPage: React.FC = () => {
           flexFlow: 'column nowrap',
           marginBottom: '3rem',
         }}>
-        <Typography variant='h1' id='documentation'>
+        <Typography variant='h1' id='redux-documentation'>
           Документация
         </Typography>
         <Typography variant='body1'>
@@ -84,7 +86,7 @@ const ReduxPage: React.FC = () => {
           flexFlow: 'column nowrap',
           marginBottom: '3rem',
         }}>
-        <Typography variant='h1' id='popularity'>
+        <Typography variant='h1' id='redux-popularity'>
           Популярность
         </Typography>
         <Typography variant='body1'>
@@ -159,7 +161,7 @@ const ReduxPage: React.FC = () => {
           flexFlow: 'column nowrap',
           marginBottom: '3rem',
         }}>
-        <Typography variant='h1' id='size'>
+        <Typography variant='h1' id='redux-size'>
           Размер
         </Typography>
         <Typography variant='body1'>
@@ -179,7 +181,7 @@ const ReduxPage: React.FC = () => {
           flexFlow: 'column nowrap',
           marginBottom: '3rem',
         }}>
-        <Typography variant='h1' id='scalability'>
+        <Typography variant='h1' id='redux-scalability'>
           Масштабируемость
         </Typography>
         <Typography variant='body1'>
@@ -205,9 +207,8 @@ const ReduxPage: React.FC = () => {
           flexFlow: 'column nowrap',
           marginBottom: '3rem',
         }}>
-        <Typography variant='subtitle1' id='experiment'>
-          Эксперимент (Пример многократного рендеринга компонента с помощью
-          Redux)
+        <Typography variant='h1' id='redux-experiment'>
+          Эксперимент
         </Typography>
         <ReduxTest />
         <Typography variant='subtitle1'>Средние значения замеров:</Typography>
@@ -216,6 +217,10 @@ const ReduxPage: React.FC = () => {
           <li>MobX: 38,9 мс. </li>
           <li>Recoil: 1989,46 мс.</li>
         </ul>
+      </Box>
+
+      <Box>
+        <Graph />
       </Box>
     </Box>
   );

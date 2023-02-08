@@ -54,7 +54,7 @@ const PerfTest: React.FC<PerfTestProps> = observer(({ balanceState }) => {
 
       window.clearInterval(timerId);
       const timeEnd = performance.now();
-      setResult(` ${Math.round(timeEnd - timeStart)} мс`);
+      setResult(` ${Math.round(timeEnd - timeStart)}`);
       setIsDisabled(false);
     });
   }
@@ -65,6 +65,7 @@ const PerfTest: React.FC<PerfTestProps> = observer(({ balanceState }) => {
 
       <p>Введите количество прогонов</p>
       <Input
+        data-testid='input-perf-test'
         value={count}
         type='number'
         onChange={(event) => setCount(Number(event.target.value))}
@@ -80,7 +81,7 @@ const PerfTest: React.FC<PerfTestProps> = observer(({ balanceState }) => {
 
       <br />
 
-      <p>Результат: {result}</p>
+      <p data-testid='result'>Результат: {result}</p>
     </PerfTestCss>
   );
 });

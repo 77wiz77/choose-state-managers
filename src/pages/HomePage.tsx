@@ -5,7 +5,7 @@ import HomeInfo from '../components/HomeInfo/HomeInfo';
 const Home: React.FC = () => {
   return (
     <div>
-      <Typography variant='h1'>
+      <Typography id='home' variant='h1'>
         Добро пожаловать! Данный сайт поможет вам в выборе библиотеки для
         управления состоянием в React
       </Typography>

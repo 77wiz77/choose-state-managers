@@ -2,11 +2,12 @@ import React from 'react';
 import Typography from '@mui/material/Typography';
 
 const AboutPage: React.FC = () => {
-  const info: string =
-    'Данный проект создан для помощи в выборе менеджеров управления состояниями';
   return (
     <div>
-      <Typography variant='h1'>{info}</Typography>
+      <Typography variant='h1'>
+        Данный проект создан для помощи в выборе менеджеров управления
+        состояниями
+      </Typography>
       <Typography variant='body1'>
         Github профиль автора:{' '}
         <a href='https://github.com/77wiz77'>https://github.com/77wiz77</a>

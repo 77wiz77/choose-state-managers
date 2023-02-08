@@ -16,15 +16,7 @@ import {
 let theme = createTheme();
 theme = responsiveFontSizes(theme);
 
-interface Props {
-  /**
-   * Injected by the documentation to work in an iframe.
-   * You won't need it on your project.
-   */
-  //window?: () => Window;
-}
-
-function Layout(props: Props) {
+function Layout() {
   return (
     <ThemeProvider theme={theme}>
       <Box sx={{ display: 'flex' }}>

@@ -9,14 +9,15 @@ const RecoilPage: React.FC = () => {
       sx={{
         display: 'flex',
         flexFlow: 'column nowrap',
-      }}>
+      }}
+      id='recoil'>
       <Box
         sx={{
           display: 'flex',
           flexFlow: 'column nowrap',
           marginBottom: '3rem',
         }}
-        id='description'>
+        id='recoil-description'>
         <Typography variant='h1'>О Recoil</Typography>
         <Typography variant='body1'>
           Recoil представляет собой новый взгляд компании FaceBook на управление
@@ -65,7 +66,7 @@ const RecoilPage: React.FC = () => {
           flexFlow: 'column nowrap',
           marginBottom: '3rem',
         }}>
-        <Typography variant='h1' id='documentation'>
+        <Typography variant='h1' id='recoil-documentation'>
           Документация
         </Typography>
         <Typography variant='body1'>
@@ -89,7 +90,7 @@ const RecoilPage: React.FC = () => {
           flexFlow: 'column nowrap',
           marginBottom: '3rem',
         }}>
-        <Typography variant='h1' id='popularity'>
+        <Typography variant='h1' id='recoil-popularity'>
           Популярность
         </Typography>
         <Typography variant='body1'>
@@ -153,7 +154,7 @@ const RecoilPage: React.FC = () => {
           flexFlow: 'column nowrap',
           marginBottom: '3rem',
         }}>
-        <Typography variant='h1' id='size'>
+        <Typography variant='h1' id='recoil-size'>
           Размер
         </Typography>
         <Typography variant='body1'>
@@ -173,7 +174,7 @@ const RecoilPage: React.FC = () => {
           flexFlow: 'column nowrap',
           marginBottom: '3rem',
         }}>
-        <Typography variant='h1' id='scalability'>
+        <Typography variant='h1' id='recoil-scalability'>
           Масштабируемость
         </Typography>
         <Typography variant='body1'>
@@ -194,9 +195,8 @@ const RecoilPage: React.FC = () => {
           flexFlow: 'column nowrap',
           marginBottom: '3rem',
         }}>
-        <Typography variant='subtitle1' id='experiment'>
-          Эксперимент (Пример многократного рендеринга компонента с помощью
-          Recoil)
+        <Typography variant='h1' id='recoil-experiment'>
+          Эксперимент
         </Typography>
         <RecoilTest />
         <Typography variant='subtitle1'>Средние значения замеров:</Typography>

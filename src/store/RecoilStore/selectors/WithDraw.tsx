@@ -5,7 +5,7 @@ import BalanceState from '../atoms/BalanceState';
 const WithDraw = selector({
   key: 'WithDraw',
   get: ({ get }) => {
-    let value = get(ValueState);
+    const value = get(ValueState);
     let balance = get(BalanceState);
     return (balance = balance - value);
   },

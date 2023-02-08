@@ -19,6 +19,9 @@ const Test = styled.div`
 const ReduxTest: React.FC = () => {
   return (
     <Provider store={store}>
+      <Typography id='reduxtest' variant='body1'>
+        Пример многократного рендеринга компонента с помощью MobX
+      </Typography>
       <Typography variant='body1'>
         Здесь вы можете наглядно увидеть время многократного рендеринга
         компонента, задав количество прогонов
