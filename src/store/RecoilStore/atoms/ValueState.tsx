@@ -1,4 +1,4 @@
-import { atom, atomFamily, selector } from 'recoil';
+import { atom } from 'recoil';
 
 const ValueState = atom({
   key: 'ValueState',

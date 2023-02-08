@@ -30,9 +30,7 @@ const Input = styled.input`
   text-align: right;
 `;
 
-interface BalanceProps {}
-
-const Balance: React.FC<BalanceProps> = () => {
+const Balance: React.FC = () => {
   const [currentValue, setCurrentValue] = useRecoilState(ValueState);
   const [currentBalance, setCurrentBalance] = useRecoilState(BalanceState);
 

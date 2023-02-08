@@ -7,8 +7,12 @@ const HomeInfo: React.FC = () => {
     <div>
       {HomeInfoData.map((item) => (
         <div key={item.id}>
-          <Typography variant='subtitle1'>{item.name}</Typography>
-          <Typography variant='body1'>{item.text}</Typography>
+          <Typography variant='subtitle1' data-testid='name'>
+            {item.name}
+          </Typography>
+          <Typography variant='body1' data-testid='text'>
+            {item.text}
+          </Typography>
         </div>
       ))}
     </div>

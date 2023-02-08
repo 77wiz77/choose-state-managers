@@ -8,14 +8,15 @@ const MobXPage: React.FC = () => {
       sx={{
         display: 'flex',
         flexFlow: 'column nowrap',
-      }}>
+      }}
+      id='mobx'>
       <Box
         sx={{
           display: 'flex',
           flexFlow: 'column nowrap',
           marginBottom: '3rem',
         }}
-        id='description'>
+        id='mobx-description'>
         <Typography variant='h1'>О MobX</Typography>
         <Typography variant='body1'>
           MobX - представляет собой объектно-ориентированный взгляд на
@@ -62,7 +63,7 @@ const MobXPage: React.FC = () => {
           flexFlow: 'column nowrap',
           marginBottom: '3rem',
         }}>
-        <Typography variant='h1' id='documentation'>
+        <Typography variant='h1' id='mobx-documentation'>
           Документация
         </Typography>
         <Typography variant='body1'>
@@ -82,7 +83,7 @@ const MobXPage: React.FC = () => {
           flexFlow: 'column nowrap',
           marginBottom: '3rem',
         }}>
-        <Typography variant='h1' id='popularity'>
+        <Typography variant='h1' id='mobx-popularity'>
           Популярность
         </Typography>
         <Typography variant='body1'>
@@ -146,7 +147,7 @@ const MobXPage: React.FC = () => {
           flexFlow: 'column nowrap',
           marginBottom: '3rem',
         }}>
-        <Typography variant='h1' id='size'>
+        <Typography variant='h1' id='mobx-size'>
           Размер
         </Typography>
         <Typography variant='body1'>
@@ -166,7 +167,7 @@ const MobXPage: React.FC = () => {
           flexFlow: 'column nowrap',
           marginBottom: '3rem',
         }}>
-        <Typography variant='h1' id='scalability'>
+        <Typography variant='h1' id='mobx-scalability'>
           Масштабируемость
         </Typography>
         <Typography variant='body1'>
@@ -195,9 +196,8 @@ const MobXPage: React.FC = () => {
           flexFlow: 'column nowrap',
           marginBottom: '3rem',
         }}>
-        <Typography variant='subtitle1' id='experiment'>
-          Эксперимент (Пример многократного рендеринга компонента с помощью
-          MobX)
+        <Typography variant='h1' id='mobx-experiment'>
+          Эксперимент
         </Typography>
         <MobXTest />
         <Typography variant='subtitle1'>Средние значения замеров:</Typography>

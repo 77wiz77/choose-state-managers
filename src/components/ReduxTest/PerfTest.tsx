@@ -66,6 +66,7 @@ const PerfTest: React.FC<PerfTestProps> = ({ add }) => {
 
       <p>Введите количество прогонов</p>
       <Input
+        data-testid='input-perf-test'
         value={count}
         type='number'
         onChange={(event) => setCount(Number(event.target.value))}
@@ -81,7 +82,7 @@ const PerfTest: React.FC<PerfTestProps> = ({ add }) => {
 
       <br />
 
-      <p>Результат: {result}</p>
+      <p data-testid='result'>Результат: {result}</p>
     </PerfTestCss>
   );
 };

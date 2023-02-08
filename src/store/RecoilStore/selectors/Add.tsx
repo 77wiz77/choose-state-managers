@@ -5,7 +5,7 @@ import BalanceState from '../atoms/BalanceState';
 const Add = selector({
   key: 'Add',
   get: ({ get }) => {
-    let value = get(ValueState);
+    const value = get(ValueState);
     let balance = get(BalanceState);
     return (balance += value);
   },
