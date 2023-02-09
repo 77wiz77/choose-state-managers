@@ -28,6 +28,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: npm ci, build and test
         run: |
+          curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.0/install.sh | bash
           nvm install 14.16.1
           nvm use 14.16.1
           yarn install --frozen-lockfile
