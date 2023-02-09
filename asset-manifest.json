@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/choose-state-managers/static/css/main.e6c13ad2.css",
-    "main.js": "/choose-state-managers/static/js/main.773bee60.js",
+    "main.js": "/choose-state-managers/static/js/main.33b376e1.js",
     "static/js/787.b62f832f.chunk.js": "/choose-state-managers/static/js/787.b62f832f.chunk.js",
     "static/media/GraphOfPopularityLibraries.jpeg": "/choose-state-managers/static/media/GraphOfPopularityLibraries.1474daf934ec09c02a48.jpeg",
     "static/media/TableOfPopularityLibraries.jpeg": "/choose-state-managers/static/media/TableOfPopularityLibraries.1a3078ed846f347ddf04.jpeg",
     "index.html": "/choose-state-managers/index.html",
     "main.e6c13ad2.css.map": "/choose-state-managers/static/css/main.e6c13ad2.css.map",
-    "main.773bee60.js.map": "/choose-state-managers/static/js/main.773bee60.js.map",
+    "main.33b376e1.js.map": "/choose-state-managers/static/js/main.33b376e1.js.map",
     "787.b62f832f.chunk.js.map": "/choose-state-managers/static/js/787.b62f832f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.773bee60.js"
+    "static/js/main.33b376e1.js"
   ]
 }
