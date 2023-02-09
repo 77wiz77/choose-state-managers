@@ -1,7 +1,6 @@
 import React from 'react';
 import ReduxTest from '../components/ReduxTest/ReduxTest';
 import { Typography, Box, Link } from '@mui/material';
-import Graph from '../components/Graph/Graph';
 
 const ReduxPage: React.FC = () => {
   return (
@@ -217,10 +216,6 @@ const ReduxPage: React.FC = () => {
           <li>MobX: 38,9 мс. </li>
           <li>Recoil: 1989,46 мс.</li>
         </ul>
-      </Box>
-
-      <Box>
-        <Graph />
       </Box>
     </Box>
   );
