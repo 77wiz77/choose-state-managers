@@ -1,7 +1,7 @@
 {
   "name": "choose-state-managers",
   "version": "0.1.0",
-  "homepage": "https://77wiz77.github.io/choose-state-managers/#",
+  "homepage": "https://77wiz77.github.io/choose-state-managers/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.9.3",
