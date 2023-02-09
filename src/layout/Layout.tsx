@@ -3,7 +3,6 @@ import React from 'react';
 import Header from './Header';
 import LeftSideMenu from './LeftSideMenu';
 import Main from './Main';
-import Footer from './Footer';
 
 import Box from '@mui/material/Box';
 
@@ -23,7 +22,6 @@ function Layout() {
         <Header />
         <LeftSideMenu />
         <Main />
-        {/* <Footer /> */}
       </Box>
     </ThemeProvider>
   );

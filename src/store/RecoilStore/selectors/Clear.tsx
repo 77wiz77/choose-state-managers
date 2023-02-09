@@ -5,6 +5,7 @@ const Clear = selector({
   key: 'Clear',
   get: ({ get }) => {
     let balance = get(BalanceState);
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     return (balance = 0);
   },
 });
