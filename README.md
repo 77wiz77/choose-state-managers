@@ -1,4 +1,6 @@
-# choose-state-managers
+# Choose-state-managers
+# Link: https://77wiz77.github.io/choose-state-managers/
+
 ## About 
 This project created for skill's demonstration and to help web developers in choosing a state manager in React. 
 
